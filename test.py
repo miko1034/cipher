@@ -1,10 +1,19 @@
 #ignore this file dear user, this means nothing to the actual project :>
 
-var = "mio324nkl523"
+#var = "mio324nkl523"
+#for i in range(len())
+#newvar = int("".join(filter(var.isdigit(), var)))
 
-for i in range(len(var)):
-    try:
-        print(int(var[i]))
-    except ValueError:
-        i += 1
-        print(int(var[i]))
+#print(newvar)
+
+
+var = "abc123"
+
+def getdigit(string):
+    to_return = []
+    for i in range(len(string)):
+        if string[i].isalpha() == False:
+            to_return.append(string[i])
+    return to_return
+
+print(getdigit(var))
