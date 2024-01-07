@@ -10,11 +10,10 @@ mainframe = Frame(window,bg="light blue",highlightcolor="black",highlightthickne
 
 #objects
 title = Label(titleframe,text="Enciptor and Decriptor",font=("Ubuntu", 15),bg="light blue")
-title.place(x=10,y=10)
+title.place(x=23,y=10)
 
 
 #packing
-
 titleframe.pack()
 titleframe.pack_propagate(False)
 titleframe.configure(width=250,height=50,)
