@@ -7,8 +7,10 @@
 #print(newvar)
 
 
-var = "abc123"
+var = "abchjnmauu123"
+vlen = len(var)
+print(f"the variable is: {var}")
+print(f"the variable length is: {vlen}")
 
-split_var = [*var]
 
-print(split_var)
+for i in 
