@@ -9,11 +9,6 @@
 
 var = "abc123"
 
-def getdigit(string):
-    to_return = []
-    for i in range(len(string)):
-        if string[i].isalpha() == False:
-            to_return.append(string[i])
-    return to_return
+split_var = [*var]
 
-print(getdigit(var))
+print(split_var)
