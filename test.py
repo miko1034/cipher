@@ -7,10 +7,15 @@
 #print(newvar)
 
 
-var = "abchjnmauu123"
+var = "11"
 vlen = len(var)
 print(f"the variable is: {var}")
 print(f"the variable length is: {vlen}")
 
+while True:
+    if (len(var)%4) == 0:
+        break
+    else:
+        var = var+"H"
 
-for i in 
+print(var)
