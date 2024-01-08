@@ -8,9 +8,8 @@
 
 
 var = "11"
-vlen = len(var)
 print(f"the variable is: {var}")
-print(f"the variable length is: {vlen}")
+print(f"the variable length is: {len(var)}")
 
 while True:
     if (len(var)%4) == 0:
@@ -18,4 +17,5 @@ while True:
     else:
         var = var+"H"
 
+print(f"the variable length is: {len(var)}")
 print(var)
