@@ -2,7 +2,7 @@ from tkinter import *
 
 #window
 window = Tk()
-window.geometry("250x350")
+window.geometry("250x400")
 
 #frames
 titleframe = Frame(window,bg="light blue",highlightcolor="black",highlightthickness=1)
@@ -16,10 +16,12 @@ title.place(x=23,y=10)
 #packing
 titleframe.pack()
 titleframe.pack_propagate(False)
-titleframe.configure(width=250,height=50,)
+titleframe.configure(width=250,height=50)
 mainframe.pack(side=BOTTOM)
 mainframe.pack_propagate(False)
-mainframe.configure(width=250,height=300)
+mainframe.configure(width=250,height=350)
+
+#mainloop
 window.mainloop()
 
 # why have i started making a ui before actually making functional code? idk you tell me
