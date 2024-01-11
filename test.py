@@ -9,7 +9,6 @@
         #then appends to a list of fragments that is the returned
 def split(var):
     to_return = []
-    #gets first 4 of var
     while var != "":
         to_return.append(var[:4])
         var = var[4:]

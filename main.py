@@ -1,3 +1,5 @@
+from test import split
+
 #asks for message
 message = str(input("Enter the text you want to encrypt? "))
 
@@ -15,6 +17,15 @@ def encrypt(text):
     #joins the list back together and reverses it
     text = "".join(split_text)[::-1]
     #splits everything into four equal parts
+    while True:
+        if (len(text)%4) == 0:
+            break
+        else:
+            text = text+"H"
+    temp # carry on here
+    while temp != "":
+        split_text.append(var[:4])
+        var = var[4:]
     print(len(text))
     return text
 
