@@ -1,4 +1,6 @@
 #ignore this file, dear user, this means nothing to the actual project :>
+#this file is a mess
+#i barely know whats going on here...
 
 def split(var):
     to_return = []
@@ -18,7 +20,23 @@ while True:
         var = var+"H"
     
 
-print(f"the variable length is: {len(var)}")
+print(f"the variable length is after fillage: {len(var)}")
 print(var)
 fragmented_text = split(var)
+
+#now carrying on from main function
+from main import encrypt
+
+fragmented_text = encrypt(var)
 print(fragmented_text)
+#reorganising 3,1,4,2 then rest in order
+reorganised_fragments = []
+pattern = [2,0,3,1]
+for i in range(len(pattern)):
+    reorganised_fragments.append(fragmented_text[pattern[i]])
+    fragmented_text.remove(fragmented_text[pattern[i]])
+for i in range(len(fragmented_text)):
+    fragmented_text[pattern[i]]
+#index error on line above
+#fix it. now.
+print(f"reorganised: {reorganised_fragments}")
