@@ -1,5 +1,5 @@
 #asks for message
-message = str(input("Enter the text you want to encrypt? "))
+#message = str(input("Enter the text you want to encrypt? "))
 
 def encrypt(text):
     fragmented_text = []
@@ -25,7 +25,9 @@ def encrypt(text):
     while text != "":
         fragmented_text.append(text[:4])
         text = text[4:]
+    #rearranging text
+        
     return fragmented_text        
 
-final = encrypt(message)
-print(final)
+#final = encrypt(message)
+#print(final)
