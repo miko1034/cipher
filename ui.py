@@ -5,16 +5,15 @@ window = Tk()
 window.geometry("250x400")
 
 #frames
-titleframe = Frame(window,bg="light blue",highlightcolor="black",highlightthickness=1)
-mainframe = Frame(window,bg="light blue",highlightcolor="black",highlightthickness=1)
+titleframe = Frame(window,bg="light green",highlightcolor="black",highlightthickness=1)
+mainframe = Frame(window,bg="light green",highlightcolor="black",highlightthickness=1)
 
 #objects
-title = Label(titleframe,text="Enciptor and Decriptor",font=("Ubuntu", 15),bg="light blue")
+title = Label(titleframe,text="Enciptor and Decriptor",font=("Ubuntu", 15),bg="light green")
 title.place(x=23,y=10)
 
-
 #packing
-titleframe.pack()
+titleframe.pack(side=TOP)
 titleframe.pack_propagate(False)
 titleframe.configure(width=250,height=50)
 mainframe.pack(side=BOTTOM)
