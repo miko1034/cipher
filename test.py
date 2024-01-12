@@ -32,11 +32,14 @@ print(fragmented_text)
 #reorganising 3,1,4,2 then rest in order
 reorganised_fragments = []
 pattern = [2,0,3,1]
-for i in range(len(pattern)):
+i = 0
+while len(reorganised_fragments) != 4:
     reorganised_fragments.append(fragmented_text[pattern[i]])
     fragmented_text.remove(fragmented_text[pattern[i]])
-for i in range(len(fragmented_text)):
-    fragmented_text[pattern[i]]
+    i  = i + 1 # uh not sure if it works but imma just guess it is :)
+
+        
+
 #index error on line above
 #fix it. now.
 print(f"reorganised: {reorganised_fragments}")
