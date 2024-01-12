@@ -28,18 +28,24 @@ fragmented_text = split(var)
 from main import encrypt
 
 fragmented_text = encrypt(var)
-print(fragmented_text)
 #reorganising 3,1,4,2 then rest in order
 reorganised_fragments = []
 pattern = [2,0,3,1]
-i = 0
-while len(reorganised_fragments) != 4:
-    reorganised_fragments.append(fragmented_text[pattern[i]])
+thefour = []
+#gets the four at the indexes of pattern[]
+print(f"fragmented: {fragmented_text}")
+for i in range(len(pattern)):
+    thefour.append(fragmented_text[pattern[i]])
     fragmented_text.remove(fragmented_text[pattern[i]])
-    i  = i + 1 # uh not sure if it works but imma just guess it is :)
 
-        
+#code above doesnt really work
+#pls fix
 
+print(f"\npattern: {pattern}\n")
+print(f"the four: {thefour}")
+print(f"newly removed: {fragmented_text}")
+
+reorganised_fragments = thefour + fragmented_text
 #index error on line above
 #fix it. now.
 print(f"reorganised: {reorganised_fragments}")
