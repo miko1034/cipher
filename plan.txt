@@ -1,0 +1,9 @@
+DONE 1) change to hex
+DONE 2) change digits to binary
+DONE 3) reverse everything
+DONE 4) split into quarters
+5) randomly shuffle the list, but get the original places of each segment and store it as a KEY
+6) joins the list back together
+7) perform a cipher shift -----> adds shift amount to KEY
+8) gets index of all characters ----> adds to KEY
+9) converts everything to B26
